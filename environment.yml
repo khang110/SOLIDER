@@ -1,0 +1,24 @@
+name: solidermain
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - pytorch=1.7.1
+  - torchvision=0.8.2
+  - cudatoolkit=10.1
+  - numpy
+  - matplotlib
+  - opencv
+  - scipy
+  - pandas
+  - tqdm
+  - pillow
+  - faiss-cpu
+  - pip
+  - pip:
+      - tensorboard
+      - pycocotools
+      - opencv-python

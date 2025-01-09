@@ -22,12 +22,12 @@ import torch
 import torch.nn as nn
 
 from utils import trunc_normal_
-from torch._six import container_abcs
-
+# from torch._six import container_abcs
+from torch import inf
 # From PyTorch internals
 def _ntuple(n):
     def parse(x):
-        if isinstance(x, container_abcs.Iterable):
+        if isinstance(x, inf.Iterable):
             return x
         return tuple(repeat(x, n))
     return parse
